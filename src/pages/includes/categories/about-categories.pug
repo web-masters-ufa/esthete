@@ -1,0 +1,7 @@
+mixin about-category(title, text, url)
+  section.about-category
+    div.about-category__description
+      h2.about-category__header=title
+      p.about-category__text=text
+    div.about-category__image-container
+      img(src=url alt="category image").about-category__image

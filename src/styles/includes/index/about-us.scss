@@ -1,0 +1,75 @@
+@import "../../utils/variables";
+
+.about-us{
+  position: relative;
+  display: flex;
+  width: 138%;
+  margin-left: -19%;
+  flex-direction: column;
+  background-image: url("../img/about-us-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3.2rem;
+}
+
+.about-us::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100% - $main-indent;
+  bottom: -1.6rem;
+  right: 0;
+  height: 1px;
+  background-color: $background-line;
+}
+
+.about-us__description{
+  position: relative;
+  width: 51.875%;
+  height: 100%;
+  background-color: rgba(44, 36, 39, 0.4);;
+  color: $light;
+  margin-left: auto;
+  padding: 2.4rem $main-indent 1rem 2.4rem;
+}
+
+.about-us__description::before{
+  content: "";
+  position: absolute;
+  top: 1.6rem;
+  left: 2.4rem;
+  display: inline-block;
+  width: 96.4%;
+  height: 1px;
+  background-color: $background-line;
+}
+
+.about-us__header{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: $white;
+  margin-bottom: 3.2rem;
+}
+
+.about-us__list{
+  padding-left: 1.6rem;
+}
+
+.about-us-list__item{
+  margin-bottom: 2.4rem;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.about-us-list__text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 150%;
+  color: $white;
+}
+

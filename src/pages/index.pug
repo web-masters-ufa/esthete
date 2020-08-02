@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+  block head
+    head
+      meta(charset="utf-8")
+      title Esthete
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      meta(content="ie=edge" http-equiv="x-ua-compatible")
+      link(rel="stylesheet" href="./css/style.min.css")
+  body#body.wrapper
+    include ./common/modal-consultation
+    include ./common/modal-gallery
+    block header
+      include common/header
+    block content
+      main.main
+        include ./includes/index/about-us
+        include ./includes/index/advantages
+        include ./includes/index/masters
+        include ./includes/index/goods
+        include ./includes/index/portfolio
+        .container-btn
+          button.btn.btn--light.btn--size-large.btn--line.btn-consultation Получить консультацию
+    block footer
+      include common/footer
+    block scripts
+      script(src="./js/main.min.js")

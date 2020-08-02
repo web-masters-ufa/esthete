@@ -1,0 +1,63 @@
+@import "../utils/variables";
+
+.navigation{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 13.75%;
+  background-color: rgba(51, 43, 46, 0.6);
+  transition: transform 0.5s;
+}
+
+.scroll-down .navigation {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .navigation {
+  transform: none;
+}
+
+.navigation__list{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation-list__item{
+  margin-right: 3.2rem;
+
+  &:first-child{
+    margin-left: 8rem;
+  }
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.navigation-list__link{
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 100%;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navigation-list__link:hover {
+  border-bottom: 1.5px solid $light;
+}
+
+.navigation__tel{
+  justify-self: flex-end;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  color: $white;
+}

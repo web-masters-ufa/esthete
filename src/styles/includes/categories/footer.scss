@@ -1,0 +1,26 @@
+@import "../../utils/variables";
+
+.category__footer{
+  width: 138%;
+  margin-left: -19%;
+  padding: 1.6rem 19% 0 19%;
+  background-color: $second;
+}
+
+.category-footer__logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo__img{
+  width: 10%;
+}
+
+.category-footer__logo::before, .category-footer__logo::after{
+  content: "";
+  width: 30.4%;
+  height: 1px;
+  background-color: $background-line;
+}

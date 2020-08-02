@@ -1,0 +1,72 @@
+@import "../../utils/variables";
+
+.masters{
+  position: relative;
+  width: 138%;
+  margin-left: -19%;
+  background-image: url("../img/master-background.png");
+  background-repeat: no-repeat;
+  background-size: 66.2% 100%;
+  background-position: right;
+  margin-bottom: 13.6rem;
+}
+
+.masters::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100% - $main-indent;
+  bottom: -1.6rem;
+  right: 0;
+  height: 1px;
+  background-color: $background-line;
+}
+
+.masters__description{
+  width: 60.1%;
+  height: 100%;
+  padding-left: $main-indent;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  background-color: rgba(44, 36, 39, 0.6);
+}
+
+.masters-description__item{
+  display: flex;
+  margin-bottom: 4.8rem;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.masters-description__img{
+  height: auto;
+}
+
+.masters-description__container{
+  padding-top: 6.2rem;
+  padding-left: 2.4rem;
+}
+
+.masters-description__header{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 100%;
+  color: #E5E5E5;
+  margin-bottom: 2.4rem;
+}
+
+.master-description__text{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #E5E5E5;
+  margin-bottom: 0.8rem;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

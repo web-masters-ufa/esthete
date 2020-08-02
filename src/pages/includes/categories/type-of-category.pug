@@ -1,0 +1,11 @@
+mixin type-of-category(category)
+  section.type-of-category
+    each item in category
+      div.type__container
+        figure.type__image-container
+          img(src=item.src alt="category type").type__image
+        article.type-description
+          h3.type__header=item.title
+          p.type__text!=item.text
+
+

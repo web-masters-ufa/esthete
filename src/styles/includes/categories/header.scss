@@ -1,0 +1,28 @@
+@import "../../utils/variables";
+
+.category__header{
+  margin-top: 5.2rem;
+}
+
+.category-header__image{
+  width: 138%;
+  margin-left: -19%;
+  padding: 3.2rem 0 14.4rem 19%;
+  background-image: url("../../../img/header-category.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-header__heading{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 133%;
+  color: $darken;
+  opacity: 0.7;
+}
+
+.category-header__logo{
+  width: 21%;
+  opacity: 0.7;
+}

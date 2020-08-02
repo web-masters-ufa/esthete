@@ -1,0 +1,63 @@
+@import "../../utils/variables";
+
+.about-category{
+  width: 138%;
+  margin-left: -19%;
+  padding: 7.2rem 19% 1.6rem 19%;
+  display: flex;
+}
+
+.about-category__description{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 1.6rem;
+}
+
+.about-category__header{
+  position: relative;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4rem;
+  height: 4rem;
+  line-height: 30%;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  color: $light;
+  margin-bottom: 5.4rem;
+}
+
+.about-category__header::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 1px;
+  background-color: $background-line;
+  margin-right: auto;
+}
+
+.about-category__text{
+  width: 85%;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 100%;
+  color: $light;
+}
+
+.about-category__image-container{
+  width: 50%;
+  height: 100%;
+}
+
+.about-category__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-height: 250px;
+}

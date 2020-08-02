@@ -1,0 +1,23 @@
+@import "../../utils/variables";
+
+.main{
+  padding-top: 2.4rem;
+}
+
+.container-btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.container-btn::before, .container-btn::after {
+  content: "";
+  width: 29%;
+  height: 1px;
+  background-color: $background-line;
+}
+
+
+
