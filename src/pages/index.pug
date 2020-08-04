@@ -10,6 +10,10 @@ html(lang="ru")
   body#body.wrapper
     include ./common/modal-consultation
     include ./common/modal-gallery
+    +modal-gallery('gallery1', 'modal-gallery__slider1')
+    +modal-gallery('gallery2', 'modal-gallery__slider2')
+    +modal-gallery('gallery3', 'modal-gallery__slider3')
+    +modal-gallery('gallery4', 'modal-gallery__slider4')
     block header
       include common/header
     block content
