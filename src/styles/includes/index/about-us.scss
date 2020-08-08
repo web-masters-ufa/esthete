@@ -10,6 +10,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 3.2rem;
+
+  @include media-tablet{
+    width: 100%;
+    margin-left: 0;
+    background: #2C2427;
+  }
 }
 
 .about-us::after{
@@ -21,16 +27,27 @@
   right: 0;
   height: 1px;
   background-color: $background-line;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .about-us__description{
   position: relative;
   width: 51.875%;
   height: 100%;
-  background-color: rgba(44, 36, 39, 0.4);;
+  background-color: rgba(44, 36, 39, 0.4);
   color: $light;
   margin-left: auto;
   padding: 2.4rem $main-indent 1rem 2.4rem;
+
+  @include media-tablet{
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    background-color: unset;
+  }
 }
 
 .about-us__description::before{
@@ -42,19 +59,46 @@
   width: 96.4%;
   height: 1px;
   background-color: $background-line;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .about-us__header{
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.5rem;
-  line-height: 120%;
-  color: $white;
   margin-bottom: 3.2rem;
+
+  .about-us__header-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 120%;
+    color: $light;
+
+    @include media-tablet{
+      font-size: 2rem;
+    }
+  }
+
+  @include media-tablet{
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("../img/about-us-image.png") no-repeat;
+    background-size: cover;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid $background-line;
+  }
 }
 
 .about-us__list{
   padding-left: 1.6rem;
+
+  @include media-tablet{
+    padding-left: 3.2rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $background-line;
+  }
 }
 
 .about-us-list__item{
@@ -71,5 +115,11 @@
   font-size: 2rem;
   line-height: 150%;
   color: $white;
+
+  @include media-tablet{
+    font-size: 1.5rem;
+    line-height: 100%;
+    color: $light;
+  }
 }
 

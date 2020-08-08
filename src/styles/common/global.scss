@@ -1,5 +1,6 @@
 @import "../../../node_modules/normalize.css/normalize";
 @import "../utils/variables";
+@import "../mixins/media";
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -30,4 +31,10 @@ a {
   width: 100%;
   min-height: 100vh;
   padding: 0 13.75%;
+
+  @include media-tablet{
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
 }

@@ -11,6 +11,11 @@
   padding: 0.8rem 13.75%;
   background-color: rgba(51, 43, 46, 0.6);
   transition: transform 0.5s;
+
+  @include media-tablet{
+    display: none;
+    overflow: hidden;
+  }
 }
 
 .scroll-down .navigation {

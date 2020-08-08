@@ -56,5 +56,16 @@
   box-shadow: none;
 }
 
+.btn--slider{
+
+  @include media-tablet{
+    width: 100%;
+    background-color: $white;
+    font-size: 2rem;
+    color: #322711;
+    padding: 8px 16px;
+  }
+}
+
 
 

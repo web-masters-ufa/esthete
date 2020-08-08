@@ -7,6 +7,12 @@
   width: 138%;
   max-height: 65rem;
   margin-left: -19%;
+
+  @include media-tablet{
+    width: 100%;
+    height: 520px;
+    margin-left: 0;
+  }
 }
 
 .swiper-header{
@@ -20,6 +26,14 @@
   top: 50%;
   transform: translateY(-50%);
   color: $header-text;
+
+  @include media-tablet{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 64px 24px;
+    justify-content: space-between;
+  }
 }
 
 .swiper-header__container{
@@ -53,6 +67,35 @@
   object-fit: contain;
 }
 
+.slider-logo{
+
+  @include media-tablet{
+    display: none;
+  }
+}
+
+.mobile-logo{
+  display: none;
+
+  @include media-tablet{
+    display: block;
+  }
+}
+
+.mobile-arrow{
+  display: none;
+
+  @include media-tablet{
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 19.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 9.5px;
+  }
+}
+
 .header__text{
   font-style: normal;
   font-weight: 300;
@@ -62,6 +105,10 @@
 
   &:nth-last-of-type(1){
     margin-bottom: 9.6rem;
+  }
+
+  @include media-tablet{
+    display: none;
   }
 }
 
@@ -89,8 +136,19 @@
   object-fit: cover;
 }
 
+.swiper-header-container__text{
+
+  @include media-tablet{
+    display: none;
+  }
+}
+
 .swiper-container-vertical>.swiper-pagination-bullets{
   right: $main-indent;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .header__swiper-container>.swiper-pagination-bullets .swiper-pagination-bullet{
