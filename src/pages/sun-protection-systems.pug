@@ -7,10 +7,31 @@ html(lang="ru")
       meta(content="width=device-width, initial-scale=1" name="viewport")
       meta(content="ie=edge" http-equiv="x-ua-compatible")
       link(rel="stylesheet" href="./css/style.min.css")
-  body
+  body.wrapper
     block header
       include ./includes/categories/header
     block content
+      main.catigories__main
+        include ./includes/categories/about-categories
+        +about-category("солнцезащитные системы", "Предлагаем широкий спектр различной продукции для защиты вашего помещения от солнечных лучей", "./img/about-category-2.png")
+        include ./includes/categories/type-of-category
+        +type-of-category([
+          {
+            title: 'рулонные шторы',
+            src: './img/sun-protection-1.png',
+            text: 'Система, представленная единым полотном из гладкого и плотного материала, которое закрывает площадь окна и при необходимости сворачивается в рулон. Рулонные системы располагаются отдельно на каждом стекле.'
+          },
+          {
+            title: 'жалюзи',
+            src: './img/sun-protection-2.png',
+            text: 'Светозащитные устройства, состоящие из вертикальных или горизонтальных пластин - ламелей. Ламели могут быть неподвижными или поворачиваться вокруг своей оси для регулирования световых и воздушных потоков.'
+          },
+          {
+            title: 'жалюзи - плиссе',
+            src: './img/sun-protection-3.png',
+            text: 'Оригинальная и престижная альтернатива привычным традиционным горизонтальным жалюзи или различным типам рулонных штор. Жалюзи плиссе состоят из ткани, которая при сложении изделия собирается «гармошкой» между двумя карнизами - верхним и нижним.'
+          }
+        ])
     block footer
       include ./includes/categories/footer
     block scripts
