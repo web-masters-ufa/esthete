@@ -1,7 +1,11 @@
 @import "../../utils/variables";
 
 .category__header{
-  margin-top: 5.2rem;
+  margin-top: 6.2rem;
+
+  @include media-tablet{
+    margin-top: 4.2rem;
+  }
 }
 
 .category-header__image{
@@ -11,6 +15,16 @@
   background-image: url("../../../img/header-category.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include media-tablet-horizontal{
+    width: 116%;
+    margin-left: -8%;
+    padding-left: 8%;
+  }
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .category-header__heading{

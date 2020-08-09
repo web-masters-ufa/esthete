@@ -16,7 +16,7 @@
 
 @mixin media-tablet-horizontal {
 
-  @media (min-width: $mediaWidthTabletHorizontal) {
+  @media (max-width: $mediaWidthTabletHorizontal) {
     @content;
   }
 }

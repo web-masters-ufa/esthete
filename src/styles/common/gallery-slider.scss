@@ -10,10 +10,18 @@
 
 .swiper-button-next{
   right: 4.8rem;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .swiper-button-prev{
   left: 4.8rem;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .modal-gallery__slider{
@@ -38,6 +46,10 @@
   letter-spacing: 0.18em;
   color: $light;
   margin-bottom: 0.8rem;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .modal-gallery__header::after{
@@ -59,6 +71,10 @@
   line-height: 111%;
   color: $white;
   margin-bottom: 3.6rem;
+
+  @include media-tablet{
+    display: none;
+  }
 }
 
 .modal-gallery__image{
@@ -67,4 +83,15 @@
   object-fit: cover;
   object-position: 50% 50%;
   margin-bottom: 2.4rem;
+
+  @include media-tablet{
+    height: auto;
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets{
+
+  @include media-tablet{
+    bottom: 0 !important;
+  }
 }

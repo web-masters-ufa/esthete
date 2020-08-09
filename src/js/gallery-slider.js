@@ -3,6 +3,7 @@ import Swiper, { Pagination, Navigation } from 'swiper'
 Swiper.use([Pagination, Navigation]);
 
 const portfolioImages = document.querySelectorAll('.portfolio__item');
+const typeCategories = document.querySelectorAll('.type__image-container')
 const closeModalGallery = document.querySelectorAll('.modal-gallery__close');
 const body = document.querySelector('#body');
 let galleryModal = document.querySelectorAll('.modal-container-gallery');
@@ -30,10 +31,18 @@ let galleryModal = document.querySelectorAll('.modal-container-gallery');
   }
 
   sliderCollection(modalSlider);
-
 })();
 
 portfolioImages.forEach(item => {
+  item.addEventListener('click', () => {
+    body.classList.toggle('overflow');
+    galleryModal.forEach(item => {
+      item.classList.toggle('modal-container--open');
+    });
+  });
+});
+
+typeCategories.forEach(item => {
   item.addEventListener('click', () => {
     body.classList.toggle('overflow');
     galleryModal.forEach(item => {

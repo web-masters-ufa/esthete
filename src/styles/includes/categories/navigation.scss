@@ -1,5 +1,30 @@
 @import "../../utils/variables";
 
+
+.navigation-category{
+  height: 62px;
+  background-color: $second;
+
+  @include media-tablet-horizontal{
+    padding-left: 7%;
+  }
+
+  @include media-tablet{
+    display: flex;
+    width: 100%;
+    padding-left: 1.6rem;
+    height: 42px;
+
+    .navigation__tel{
+      display: none;
+    }
+
+    .navigation-list__link{
+      font-size: 1.5rem;
+    }
+  }
+}
+
 .navigation__link-back{
   display: flex;
   align-items: center;
@@ -17,4 +42,9 @@
 .category-navigation__list{
   justify-content: flex-start;
   padding-left: 1.6rem;
+
+
+  .navigation-list__item{
+    margin-left: 0;
+  }
 }

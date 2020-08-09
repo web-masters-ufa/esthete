@@ -116,6 +116,8 @@
   font-weight: 300;
   font-size: 2rem;
   line-height: 100%;
+  text-decoration: none;
+  color: $light;
 
   @include media-tablet{
     font-size: 1.5rem;
