@@ -5,13 +5,13 @@
 *, *::before, *::after {
   box-sizing: inherit;
   font-size: $font-size;
-  font-family: Roboto;
   margin: 0;
   padding: 0;
 }
 
 html {
   box-sizing: border-box;
+  font-family: $font-stack-roboto;
 }
 
 img {
