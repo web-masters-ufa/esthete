@@ -10,10 +10,30 @@ html(lang="ru")
   body#body.wrapper
     include ./common/modal-consultation
     include ./common/modal-gallery
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
+    +modal-gallery([
+      {src: "./img/portfolio-1.png"},
+      {src: "./img/portfolio-2.png"},
+      {src: "./img/portfolio-3.png"},
+      {src: "./img/portfolio-4.png"},
+    ], 'modal-container-gallery0', 'modal-close0')
+    +modal-gallery([
+      {src: "./img/portfolio-2.png"},
+      {src: "./img/portfolio-3.png"},
+      {src: "./img/portfolio-4.png"},
+      {src: "./img/portfolio-1.png"},
+    ], 'modal-container-gallery1', 'modal-close1')
+    +modal-gallery([
+      {src: "./img/portfolio-3.png"},
+      {src: "./img/portfolio-4.png"},
+      {src: "./img/portfolio-2.png"},
+      {src: "./img/portfolio-1.png"},
+    ], 'modal-container-gallery2', 'modal-close2')
+    +modal-gallery([
+      {src: "./img/portfolio-4.png"},
+      {src: "./img/portfolio-3.png"},
+      {src: "./img/portfolio-2.png"},
+      {src: "./img/portfolio-1.png"},
+    ], 'modal-container-gallery3', 'modal-close3')
     block header
       include common/header
     block content

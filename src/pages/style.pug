@@ -9,22 +9,54 @@ html(lang="ru")
       link(rel="stylesheet" href="./css/style.min.css")
   body#body.wrapper
     include ./common/modal-gallery
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
-    +modal-gallery('')
+    +modal-gallery([
+      {src: "./img/style1.png"}
+    ], 'modal-container-gallery0', 'modal-close0')
+    +modal-gallery([
+      {src: "./img/style2.png"}
+    ], 'modal-container-gallery1', 'modal-close1')
+    +modal-gallery([
+      {src: "./img/style3.png"}
+    ], 'modal-container-gallery2', 'modal-close2')
+    +modal-gallery([
+      {src: "./img/style4.png"}
+    ], 'modal-container-gallery3', 'modal-close3')
+    +modal-gallery([
+      {src: "./img/style5.png"}
+    ], 'modal-container-gallery4', 'modal-close4')
+    +modal-gallery([
+      {src: "./img/style6.png"}
+    ], 'modal-container-gallery5', 'modal-close5')
+    +modal-gallery([
+      {src: "./img/style7.png"}
+    ], 'modal-container-gallery6', 'modal-close6')
+    +modal-gallery([
+      {src: "./img/style8.png"}
+    ], 'modal-container-gallery7', 'modal-close7')
+    +modal-gallery([
+      {src: "./img/style9.png"}
+    ], 'modal-container-gallery8', 'modal-close8')
+    +modal-gallery([
+      {src: "./img/style10.png"}
+    ], 'modal-container-gallery9', 'modal-close9')
+    +modal-gallery([
+      {src: "./img/style11.png"}
+    ], 'modal-container-gallery10', 'modal-close10')
+    +modal-gallery([
+      {src: "./img/style12.png"}
+    ], 'modal-container-gallery11', 'modal-close11')
+    +modal-gallery([
+      {src: "./img/style13.png"}
+    ], 'modal-container-gallery12', 'modal-close12')
+    +modal-gallery([
+      {src: "./img/style14.png"}
+    ], 'modal-container-gallery13', 'modal-close13')
+    +modal-gallery([
+      {src: "./img/style15.png"}
+    ], 'modal-container-gallery14', 'modal-close14')
+    +modal-gallery([
+      {src: "./img/style16.png"}
+    ], 'modal-container-gallery15', 'modal-close15')
     block header
       include ./includes/categories/header
     block content
@@ -34,81 +66,97 @@ html(lang="ru")
         include ./includes/categories/type-of-category
         +type-of-category([
           {
+            class: 'category-0',
             title: 'античный',
             src: './img/style1.png',
             text: 'Потолочные карнизы отличаются, в первую очередь, местом своего расположения - они крепятся на потолке, в отличие от традиционных моделей, которые фиксируются на стенах'
           },
           {
+            class: 'category-1',
             title: 'авангард',
             src: './img/style2.png',
             text: 'представляет собой штангу, изготовленную из различных материалов, на которой присутствуют специальные кольца с крючками.'
           },
           {
+            class: 'category-2',
             title: 'арабский:роскошь востока',
             src: './img/style3.png',
             text: 'Римские занавески обладают характерным методом складывания, который осуществляется только одним способом: подтяжкой нижнего края шторы. Внутри система изготовлена из пластика или алюминия'
           },
           {
+            class: 'category-3',
             title: 'барокко:сверкание эпохи',
             src: './img/style4.png',
             text: 'Австрийские подъемные шторы – симбиоз французских и римских занавесей. Карнизы для австрийских штор используют такие же подъемные, как для римских штор, Они могут быть и с ручным и с автоматическим управлением'
           },
           {
+            class: 'category-4',
             title: 'винтажный',
             src: './img/style5.png',
             text: 'алюминиевая конструкция, состоящая из привода для контроля за движением каретки, троса и ремня. Система универсальна: подойдет для римских, английских, японских, французских штор, а также привычных жалюзи, плиссе'
           },
           {
+            class: 'category-5',
             title: 'кантри',
             src: './img/style6.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-6',
             title: 'лофт',
             src: './img/style7.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-7',
             title: 'модерн',
             src: './img/style8.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-8',
             title: 'неоклассика',
             src: './img/style9.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-9',
             title: 'немецкий (германский)',
             src: './img/style10.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-10',
             title: 'Постмодернизм: модный эксцентрик',
             src: './img/style11.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-11',
             title: 'прованс',
             src: './img/style12.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-12',
             title: 'ренессанс',
             src: './img/style13.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-13',
             title: 'романтизм',
             src: './img/style14.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-14',
             title: 'фьюжн',
             src: './img/style15.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'
           },
           {
+            class: 'category-15',
             title: 'хай-тек',
             src: './img/style16.png',
             text: 'краткое описание карнизной системы, сферы использования, видов штор, технические характеристики'

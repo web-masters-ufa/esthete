@@ -8,6 +8,42 @@ html(lang="ru")
       meta(content="ie=edge" http-equiv="x-ua-compatible")
       link(rel="stylesheet" href="./css/style.min.css")
   body.wrapper
+    include ./common/modal-gallery
+    +modal-gallery([
+      {src: "./img/cornices/1.png"},
+      {src: "./img/cornices/2.png"},
+    ], 'modal-container-gallery0', 'modal-close0')
+    +modal-gallery([
+      {src: "./img/cornices/3.png"},
+      {src: "./img/cornices/4.png"},
+    ], 'modal-container-gallery1', 'modal-close1')
+    +modal-gallery([
+      {src: "./img/cornices/5.png"},
+      {src: "./img/cornices/6.png"},
+      {src: "./img/cornices/7.png"},
+    ], 'modal-container-gallery2', 'modal-close2')
+    +modal-gallery([
+      {src: "./img/cornices/8.png"},
+      {src: "./img/cornices/9.png"},
+    ], 'modal-container-gallery3', 'modal-close3')
+    +modal-gallery([
+      {src: "./img/cornices/10.png"},
+      {src: "./img/cornices/11.png"},
+    ], 'modal-container-gallery4', 'modal-close4')
+    +modal-gallery([
+      {src: "./img/cornices/12.png"},
+      {src: "./img/cornices/13.png"},
+    ], 'modal-container-gallery5', 'modal-close5')
+    +modal-gallery([
+      {src: "./img/cornices/14.png"},
+      {src: "./img/cornices/15.png"},
+      {src: "./img/cornices/16.png"},
+    ], 'modal-container-gallery6', 'modal-close6')
+    +modal-gallery([
+      {src: "./img/cornices/17.png"},
+      {src: "./img/cornices/18.png"},
+      {src: "./img/cornices/19.png"},
+    ], 'modal-container-gallery7', 'modal-close7')
     block header
       include ./includes/categories/header
     block content
@@ -17,41 +53,49 @@ html(lang="ru")
         include ./includes/categories/type-of-category
         +type-of-category([
           {
+            class: 'category-0',
             title: 'пластиковые шины',
             src: './img/cornices-1.png',
             text: 'Традиционно являются конструктивной частью карнизов с багетной планкой и соединяется с багетной планкой при помощи специального адаптера. Данный тип карниза рассчитан на лёгкие и средние шторы.'
           },
           {
+            class: 'category-1',
             title: 'Профильные алюминиевые карнизы',
             src: './img/cornices-2.png',
             text: 'Представляют собой крепкую, но легкую конструкцию, обеспечивающуюся за счет материала, из которого они изготовлены. Алюминий позволяет производить монтаж конструкции самостоятельно в домашних условиях.'
           },
           {
+            class: 'category-2',
             title: 'круглые карнизы',
             src: './img/cornices-3.png',
             text: 'В качестве элемента, держащего шторы, используется круглый профиль или штанга. Они являются более прочными по сравнению с остальными'
           },
           {
+            class: 'category-3',
             title: 'бакетные карнизы',
             src: './img/cornices-4.png',
             text: 'Планка для карниза изготовляется из дерева или из композитных материалов. Багетная планка часто играет роль декора эркерного карниза и имеет замысловатую форму.'
           },
           {
+            class: 'category-4',
             title: 'карнизы кафе',
             src: './img/cornices-5.png',
             text: 'Это всегда однорядная система: небольшая тонкая штанга или даже струна, которые легко крепятся с помощью саморезов или двухстороннего скотча.'
           },
           {
+            class: 'category-5',
             title: 'электрокарниз',
             src: './img/cornices-6.png',
             text: 'Это устройство, посредством которого удается механизировать движение штор. Владельцу такого приспособления не нужно вставать, чтобы их открыть - по определенной программе электрокарниз может самостоятельно осуществлять такую работу.'
           },
           {
+            class: 'category-6',
             title: 'Подъемные карнизы для римских, австрийских и французских штор',
             src: './img/cornices-7.png',
             text: 'Это роторно-цепочная конструкция с расчетным количеством подъемных блоков.'
           },
           {
+            class: 'category-7',
             title: 'для японских штор',
             src: './img/cornices-8.png',
             text: 'Карнизы представлены тремя металлическими дорожками, которые крепятся к потолку или стене. Движение шторы вдоль этого карниза легко осуществляется вручную или с помощью поводка.'

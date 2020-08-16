@@ -1,6 +1,6 @@
-import Swiper, { Pagination } from 'swiper'
+import Swiper, { Pagination } from 'swiper';
 
-Swiper.use([Pagination])
+Swiper.use([Pagination]);
 
 const swiper = new Swiper(`.header__swiper-container`, {
   direction: `vertical`,

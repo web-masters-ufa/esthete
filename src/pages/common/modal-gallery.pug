@@ -1,34 +1,17 @@
-mixin modal-gallery(images)
-  .modal-container.modal-container-gallery
+mixin modal-gallery(images, modifier, modifierClose)
+  .modal-container.modal-container-gallery(class=modifier)
     section.modal-gallery
-      button.btn.btn--close.modal__btn-close.modal-gallery__close
+      button(class=modifierClose).btn.btn--close.modal__btn-close.modal-gallery__close
         img(src="./img/close.svg" alt="close").btn__icon
       .swiper-container.modal-gallery__slider
         .swiper-wrapper.modal-gallery__wrapper-slides
-          .swiper-slide.modal-gallery__slide
-            .mobile-title
-              h2.mobile-title__header портфолио
-            h2.modal-gallery__header название проекта
-            img(src="./img/portfolio-1.png" alt="project").modal-gallery__image
-            p.modal-gallery__text Краткое описание проекта. Концепция, пожелания закзачика. Материалы, фурнитура и другие элементы, использованные в проекте.
-          .swiper-slide.modal-gallery__slide
-            .mobile-title
-              h2.mobile-title__header портфолио
-            h2.modal-gallery__header название проекта
-            img(src="./img/portfolio-2.png" alt="project").modal-gallery__image
-            p.modal-gallery__text Краткое описание проекта. Концепция, пожелания закзачика. Материалы, фурнитура и другие элементы, использованные в проекте.
-          .swiper-slide.modal-gallery__slide
-            .mobile-title
-              h2.mobile-title__header портфолио
-            h2.modal-gallery__header название проекта
-            img(src="./img/portfolio-3.png" alt="project").modal-gallery__image
-            p.modal-gallery__text Краткое описание проекта. Концепция, пожелания закзачика. Материалы, фурнитура и другие элементы, использованные в проекте.
-          .swiper-slide.modal-gallery__slide
-            .mobile-title
-              h2.mobile-title__header портфолио
-            h2.modal-gallery__header название проекта
-            img(src="./img/portfolio-4.png" alt="project").modal-gallery__image
-            p.modal-gallery__text Краткое описание проекта. Концепция, пожелания закзачика. Материалы, фурнитура и другие элементы, использованные в проекте.
+          each image in images
+            .swiper-slide.modal-gallery__slide
+              .mobile-title
+                h2.mobile-title__header портфолио
+              h2.modal-gallery__header название проекта
+              img(src=image.src alt="project").modal-gallery__image
+              p.modal-gallery__text Краткое описание проекта. Концепция, пожелания закзачика. Материалы, фурнитура и другие элементы, использованные в проекте.
         .swiper-pagination.modal-gallery-pagination
       .swiper-button-next
       .swiper-button-prev

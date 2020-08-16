@@ -33,6 +33,11 @@
   list-style: none;
 }
 
+.navigation__container{
+  display: flex;
+  flex-direction: column;
+}
+
 .navigation-list__item{
   margin-right: 3.2rem;
 
@@ -66,4 +71,9 @@
   font-style: normal;
   font-weight: 300;
   color: $white;
+  margin-bottom: 4px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }

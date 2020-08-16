@@ -27,9 +27,9 @@ a {
 }
 
 .wrapper{
-  background-color: $darken;
+  background-color: #615258;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 0 13.75%;
 
   @include media-tablet-horizontal{
