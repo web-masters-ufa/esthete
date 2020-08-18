@@ -12,6 +12,10 @@
   background-color: rgba(51, 43, 46, 0.6);
   transition: transform 0.5s;
 
+  @media screen and (max-width: 992px){
+    padding: 0.8rem 6%;
+  }
+
   @include media-tablet{
     display: none;
     overflow: hidden;
